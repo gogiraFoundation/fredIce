@@ -2,27 +2,24 @@
 @keyframes circular {
     0% {background-color: #303333;
         color: salmon;
-        left:350px; top:250px;
-        right:350px; bottom:250px;
+        left:150px; top:50px;
+        right:100px; bottom:100px;
     }
-    25% {background-color: salmon;
-        color: #303333;
-        right:300px; top:200px;
-        left:300px; bottom:200px;
-    }
-    50% {background-color: orangered;
+
+    50% {background-color: #008793;
         color: whitesmoke;
-        left:250px; top:150px;
-        right:250px; bottom:150px;
+        left:75px; top:20px;
+        right:75px; bottom:60px;
     }
-    75% {background-color: whitesmoke;
-        color: orangered;
-        left:200px; bottom:100px;
-        right:200px; top:100px;
+
+    75% {background-color: #004d7a;
+        left:50px; bottom:40px;
+        right:50px; bottom:30px;
     }
-    100% {background-color: #303333;
-        left:150px; bottom:50px;
-        right:150px; bottom:50px;
+
+    100% {background-color: #008793;
+        left:25px; bottom:25px;
+        right:25px; bottom:20px;
     }
 }
 
@@ -52,15 +49,17 @@ body {
 }
 
 .blog_header {
-    font-size: 24px;
+    font-size: 42px;
     color: #303333;
-    margin: 30px auto;
+    margin: 30px auto 10px auto;
     
 }
 .blog_header h2 {
-    padding: 20px;
+    padding: 20px 20px 10px 20px;
     
 }
+
+
 
 .first,
 .blog-section {
@@ -75,46 +74,47 @@ body {
 }
 
 .discover_2 {
-    margin: 0 auto;
-    padding: 0;
     color: #303333;
+    width: 100%;
 
 }
 
-.blog-grid {
+.header-grid, 
+.btn-wrap {
     display: flex;
     flex-direction: row;
-    margin: 20px auto;
-    width: 80%;
-    padding: 10px;
+    margin-top: 20px;
+    padding-top: 40px;
 }
 
-.grid1,
-.grid2,
-.grid3 {
-    width: 33%;
-    height: 150px;
-    margin: 10px 5px;
-}
-
-.grid1 {
+.grid {
+    width: 45%;
+    height: 200px;
+    max-height: 350px;
+    margin: 10px auto;
     background-color: #303333;
-    -webkit-mask-image: url("/static/fredapp/media/img/record_slide.jpg");
-    mask-image: url("/static/fredapp/media/img/record_slide.jpg");
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
 }
 
-.grid2 {
-    background-color: salmon;
+.left, 
+.right,
+.middle {
+    margin: 10px;
 }
 
-.grid3 {
-    background-color: orangered;
+.btn-wrap {
+    padding: 15px;
+    width: 35%;
+    margin-right: 20px;
 }
 
+.headliner-text {
+    font-size: 16px;
+    padding-top: 0;
+    margin-top: 0;
+    color: salmon;
+}
 .blog-section {
-    background-color: aquamarine;
+    background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     max-height: 450px;
 }
 
@@ -131,22 +131,24 @@ body {
     font-family: "Raleway";
     letter-spacing: normal;
     line-height: normal;
+    color: whitesmoke;
+    text-shadow: #303333;
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px 30px;
+    font-size: 21px;
 }
 
-
-aside {
-    margin: 10px auto;
-    padding: 15px;
-}
 
 .listen_btn {
     padding: 7px 25px;
-    font-size: 18px;
+    font-size: 24px;
     border-radius: 4px;
     border: 1px solid #303333;
     background-color: orangered;
     color: whitesmoke;
     box-shadow: 1px 2px 3px salmon;
+    margin: 0 auto;
 
 }
 
@@ -156,17 +158,18 @@ aside {
     box-shadow: 1px 2px 3px salmon;
 }
 
+
 .blo_grid {
-    width: 300px;
-    height: 300px;
+    width: 100px;
+    height: 100px;
     margin: 15px auto;
     border: 1px solid orangered;
     
 }
 
 .blo_grid2 {
-    width: 200px;
-    height: 200px;
+    width: 75px;
+    height: 75px;
     margin: 15px auto; 
     
 }
@@ -219,6 +222,12 @@ svg {
     height: 400px;
 }
 
-circle {
-    cx: "75";
+
+
+.grid-wrap {
+    display: flex;
+    flex-direction: row;
 }
+
+
+.
