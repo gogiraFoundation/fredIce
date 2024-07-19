@@ -325,6 +325,6 @@
 
 
 .third-section {
-    background-image: linear-gradient(to left bottom, #960096, #004d7a, #008793, #00bf72, #a8eb12);
+    background-image: radial-gradient(to left bottom, #960096, #004d7a, #008793, #00bf72, #a8eb12);
     max-height: 450px;
 }
